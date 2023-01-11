@@ -1,3 +1,4 @@
+import uvicorn
 from flask import Flask, render_template, request,jsonify
 from flask_ngrok import run_with_ngrok
 from flask_cors import CORS
@@ -11,8 +12,8 @@ from chat import chatBot
 chatBot = chatBot()
 
 
-#import nltk 
-#nltk.download('punkt')
+# import nltk 
+# nltk.download('punkt')
 
 app = Flask(__name__)
 CORS(app)
@@ -77,3 +78,6 @@ def predict():
     # we jsonify our response
     message = {"answer":response}
     return jsonify(message)
+if __name__=="__main__":
+      app.run(debug=True)
+      
