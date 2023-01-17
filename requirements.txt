@@ -1,11 +1,13 @@
 detectlanguage
 Flask
-flask_cors
+Flask_Cors
 flask_ngrok
 nltk
 numpy
 requests
 torch
 gunicorn
-psycop2
-sqlalchemy
+psycopg2
+flask_sqlalchemy
+Collapse
+
