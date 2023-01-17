@@ -11,8 +11,8 @@ from flask_sqlalchemy import SQLAlchemy
 import datetime
 from chat import chatBot
 chatBot = chatBot()
-#import nltk
-#nltk.download('punkt')
+import nltk
+nltk.download('punkt')
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] ="postgresql+psycopg2://eugene:F7wIKOSv7HvyOIGZhQpSwHtN7uh7DBGY@dpg-cf35u382i3mnjchgng70-a.oregon-postgres.render.com/chatbot_db_h1ux"
 db = SQLAlchemy(app)
