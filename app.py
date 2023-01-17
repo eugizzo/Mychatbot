@@ -19,7 +19,8 @@ chatBot = chatBot()
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']="postgres+psycop2://chatbot_db_ysm0_user:3mk1ih8uqybmkzmhemmokyybvlpn5tj0@dpg-cf2ju2mn6mpkr6el01og-a.oregon-postgres.render.com/chatbot_db_ysm0"
+app.config['SQLALCHEMY_DATABASE_URI']="postgres+psycop2://eugene:F7wIKOSv7HvyOIGZhQpSwHtN7uh7DBGY@dpg-cf35u382i3mnjchgng70-a.oregon-postgres.render.com/chatbot_db_h1ux"
+
 
 db = SQLAlchemy(app)
 CORS(app)
